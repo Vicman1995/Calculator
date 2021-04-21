@@ -23,6 +23,6 @@ function validation(){
   if(value>0){
     return value
   }else{
-    alert("Enter Possitive Number")
+    alert("Enter Positive Number")
   }
 }
