@@ -1,0 +1,44 @@
+body{
+    background-color:black;
+    font-family:arial;
+    color:white
+    }
+h1{
+    color:grey;
+    font-family:verdana;
+    font-weight: bolder;
+   }
+
+   .maindiv {
+    background-color:white;
+    color:black;
+    height: 400px;
+    width:500px;
+    padding:20px;
+    border-radius:25px;
+    position: relative;
+    left:400px;
+
+  }
+  .interestDiv{
+    font-weight: 600;
+    position: relative;
+    left:100px;
+    width:350px;
+  }
+.amount{
+  margin:5px;
+  position: relative;
+  left :30px;
+}
+.rate{
+  margin : 10px;
+  position: relative;
+  left :50px;
+}
+.year{
+  margin : 10px;
+}
+.highlight{
+  background-color: yellow;
+}
