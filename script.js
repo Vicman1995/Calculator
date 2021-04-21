@@ -11,6 +11,19 @@ function compute(){
   var years = document.getElementById("years").value;
   var interest = principal * years * rate / 100;
   var year = new Date().getFullYear()+parseInt(years);
+    
+  if (principal === '' || principal <= 0) {
+   alert('Please fill amount, and must be positive');
+   return;
+ }
+ if (rate === null || rate === 0) {
+   alert('Please fill Rate');
+   return;
+ }
+ if (years === '' || years < 0) {
+   alert('Please fill Year , and must be positive');
+   return;
+ }
   var res = "If you deposit, <span class = 'highlight'>" + principal+
             "</span> ,<br> at an interest rate of <span class = 'highlight'>" +rate+
             "</span>. <br> You will receive an amount of <span class = 'highlight'>" +interest+
@@ -18,13 +31,3 @@ function compute(){
   document.getElementById("result").innerHTML = res;
 }
 
-function validation(){
-  var value = document.getElementById("principal").value;
-  var biggerThanZero = parseInt(value) > 0;
-  if(value== null || !biggerThanZero){
-  alert("Enter Positive Number")
-  document.getElementById("principal").focus();
-  }else{
-    return value
-  }
-}
