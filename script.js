@@ -20,9 +20,9 @@ function compute(){
 
 function validation(){
   var value = document.getElementById("principal").value;
-  if(value>0){
-    return value
-  }else{
+  if(value==null || value <=0){
     alert("Enter Positive Number")
+  }else{
+   return value
   }
 }
