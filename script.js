@@ -20,9 +20,11 @@ function compute(){
 
 function validation(){
   var value = document.getElementById("principal").value;
-  if(value==null || value <=0){
-    alert("Enter Positive Number")
+  var biggerThanZero = parseInt(value) > 0;
+  if(value== null || !biggerThanZero){
+  alert("Enter Positive Number")
+  document.getElementById("principal").focus();
   }else{
-   return value
+    return value
   }
 }
