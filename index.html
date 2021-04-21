@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Interest Calculator</title>
+   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="maindiv">
+    <h1>Simple Interest Calculator</h1>
+<div class="interestDiv">
+  Amount <input  class= "amount" min="1" type="number" id="principal" oninput= "validation()" autofocus ="on"  <br /><br />
+
+  Rate <input class= "rate" type="range"  onchange = "updateRate()" id="rate" min="1" max="20.25" value="10.25"  >
+  <span class= "rate" id="rate_val"> 10.25%</span> <br /><br />
+
+  No. of Years <select id="years" class= "year">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select> <br /><br />
+
+
+  <button onclick="compute()">Compute Interest</button>
+  <br>
+  <br>
+  <span id="result" >
+
+  </span>
+</div>
+<br>
+
+    <br>
+    <footer >
+      &#169; This Calculator belongs to Vicky
+    </footer>
+  </div>
+</body>
+
+
+</html>
